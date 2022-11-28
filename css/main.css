@@ -1,0 +1,289 @@
+body {
+    color: #444444;
+}
+
+.inner,
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tit {
+    line-height: 1;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.header {
+    line-height: 100px;
+}
+
+.header h1 img {
+    font-size: 0;
+    max-width: 30%;
+    filter: invert(100%);
+}
+
+
+.header .gnb a {
+    display: block;
+}
+
+.header .gnb>ul {
+    width: 500px;
+    margin: 0 auto;
+    gap: 30px
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+/* .header .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    transform: translate(0, -50%);
+} */
+
+/* .header .gnb>ul>li ul {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(95, 0, 128);
+    color: #fff;
+    width: 100px;
+    z-index: 999;
+    text-align: center;
+    line-height: 50px;
+
+    opacity: 0;
+    transition: 0.2s;
+
+    visibility: hidden;
+} */
+
+.header .gnb>ul>li:hover ul {
+    position: absolute;
+    top: 70px;
+    opacity: 1;
+
+    visibility: visible;
+}
+
+.header .gnb>ul>li ul>li~li {
+    border-top: 1px solid #ddd;
+}
+
+.header .inner {
+    position: relative;
+}
+
+.gnb i {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+.mainSlide {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.mainSlide .itm {
+    position: relative;
+}
+
+.mainSlide .itm .inner {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.mainSlide .inner h2 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    /* text-indent: -4px; */
+    margin: 0 0 35px 0;
+}
+
+.mainSlide .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 25px;
+}
+
+.mainSlide .itm {
+    height: 700px;
+}
+
+.mainSlide .itm01 {
+    background: url(../img/main_01.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .itm02 {
+    background: url(../img/main_02.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .itm03 {
+    background: url(../img/main_03.jpg) no-repeat center center/ cover;
+}
+
+.mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainSlide .slick-dots li {
+    display: inline-block;
+    width: 100px;
+    height: 6px;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 3px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.mainSlide .slick-dots li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #85058a;
+}
+
+.mainSlide .slick-dots li.slick-active::after {
+    width: 100%;
+    transition: 2s;
+}
+
+/* .mainSlide .slick-dots li.slick-active {
+    background: #f00;
+} */
+
+.mainSlide .slick-dots button {
+    display: none;
+}
+
+
+
+
+
+.mainBanner .txt {
+    text-align: center;
+}
+
+.mainBanner .txt h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 100px 0 20px 0;
+}
+
+.mainBanner .txt p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.mainBanner .image {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 50px 0;
+}
+
+.mainBanner .pp .sbox {
+    width: 50%;
+}
+
+.mainBanner .pp .sbox img {
+    width: 100%;
+}
+
+.mainBanner .banner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.image .box {
+    position: relative;
+}
+
+.image .box::after {
+    content: attr(data-txt);
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    width: 50px;
+    height: 1px;
+    background: #85058a;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10%;
+}
+
+
+
+
+
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.footer .list {
+    font-size: 0;
+    margin: 0 0 10px 0;
+}
+
+.footer .list li {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer .list li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    margin: 0 10px;
+    transform: translate(-1px, 0);
+}
+
+.footer .list .bold {
+    font-weight: 500;
+}
+
+.footer address {
+    font-size: 10px;
+}
