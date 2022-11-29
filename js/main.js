@@ -2,7 +2,7 @@
 $('.mainSlide').slick({
     arrows: false,
     dots: true,
-    autoplay: true,
+    autoplay: false,
     pauseOnHover: false,
     pauseOnFocus: false,
 })
