@@ -5,7 +5,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #f9f9f9;
+    z-index: 9999;
+    background: #fff;
 }
 
 .header .inner {
@@ -57,14 +58,14 @@
 
 .mainSlide .itm {
     position: relative;
-    height: 700px;
+    height: 800px;
 }
 
 .mainSlide .itm .inner {
     position: absolute;
     width: 1200px;
     text-align: center;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -102,7 +103,7 @@
 
 .mainVisual .mainSlide .slick-arrow {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -153,7 +154,9 @@
     display: none;
 }
 
-/* sub */
+
+
+/* subVisual */
 
 .subVisual {
     width: 1200px;
@@ -197,6 +200,68 @@
     left: 40px;
     color: #fff;
 }
+
+/* subSlide */
+
+.subVV {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.subVV h3 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 100px 0;
+}
+
+.subSlide .itm {
+    position: relative;
+    height: 600px;
+}
+
+.subSlide .itm .inner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.subSlide .itm .inner p {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.subSlide .itm .inner h4 {
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+
+.subSlide .itm01 {
+    background: url(../img/juyo01.jpg) no-repeat center center/ cover;
+}
+
+.subSlide .itm02 {
+    background: url(../img/juyo02.jpg) no-repeat center center/ cover;
+}
+
+.subSlide .itm03 {
+    background: url(../img/juyo03.jpg) no-repeat center center/ cover;
+}
+
+.subSlide .itm04 {
+    background: url(../img/juyo04.jpg) no-repeat center center/ cover;
+}
+
 
 /* footer */
 
