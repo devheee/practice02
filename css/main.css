@@ -1,6 +1,10 @@
 /* header */
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: #f9f9f9;
 }
 
@@ -50,11 +54,6 @@
 }
 
 /* mainSlide */
-
-.mainSlide {
-    height: 700px;
-    margin: 0 auto;
-}
 
 .mainSlide .itm {
     position: relative;
@@ -130,7 +129,7 @@
     margin: 0 0 0 700px;
 }
 
-.mainVisual .mainSlide .slick-dots {
+/* .mainVisual .mainSlide .slick-dots {
     position: absolute;
     bottom: 100px;
     left: 50%;
@@ -141,10 +140,10 @@
     display: inline-block;
     width: 50px;
     height: 5px;
-    background: #c7bfbf;
+    background: #f9f9f9;
     margin: 0 2px;
     border-radius: 50px;
-}
+} */
 
 .mainVisual .mainSlide .slick-dots>li.slick-active {
     background: #333;
@@ -168,23 +167,36 @@
 }
 
 .subVisual .inner .image {
-    position: relative;
     display: flex;
     gap: 30px;
     margin: 0 auto;
     width: 1200px;
 }
 
-.subVisual .box01 p {
+.subVisual .box {
+    position: relative;
+}
+
+.subVisual .box:hover {
+    opacity: 0.7;
+}
+
+.subVisual .box h4 {
     position: absolute;
-    bottom: 180px;
-    left: 80px;
-    transform: translate(-50%, -50%);
+    bottom: 200px;
+    left: 40px;
     color: #fff;
     font-size: 30px;
     font-weight: 700;
+    line-height: 1.2em;
 }
 
+.subVisual .box p {
+    position: absolute;
+    bottom: 150px;
+    left: 40px;
+    color: #fff;
+}
 
 /* footer */
 
