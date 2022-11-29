@@ -1,8 +1,9 @@
 
 $('.mainSlide').slick({
-    arrows: false,
     dots: true,
-    autoplay: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
     pauseOnHover: false,
     pauseOnFocus: false,
+
 })
