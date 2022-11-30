@@ -1,3 +1,19 @@
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
 /* header */
 
 .header {
@@ -6,7 +22,7 @@
     left: 0;
     width: 100%;
     z-index: 9999;
-    background: #fff;
+    background: #f9f9f9;
 }
 
 .header .inner {
@@ -55,11 +71,14 @@
     display: none
 }
 
+
+
+
 /* mainSlide */
 
 .mainSlide .itm {
     position: relative;
-    height: 800px;
+    height: 850px;
 }
 
 .mainSlide .itm .inner {
@@ -132,6 +151,39 @@
     margin: 0 0 0 600px;
 }
 
+.mainVisual .scroll-downs {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    margin: auto;
+
+    width: 34px;
+    height: 55px;
+}
+
+.mainVisual .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.mainVisual .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
+
+
+
 /* .mainVisual .mainSlide .slick-dots {
     position: absolute;
     bottom: 100px;
@@ -155,8 +207,6 @@
 .mainVisual .mainSlide .slick-dots>li button {
     display: none;
 }
-
-
 
 /* subVisual */
 
@@ -351,30 +401,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 
-footer {
+.footer {
     padding: 50px 0;
-    text-align: center;
-    background: #f9f9f9;
+    border-top: 1px solid rgba(165, 168, 168, 0.3);
+}
+
+.footer .inner {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .footer .list {
@@ -382,9 +418,19 @@ footer {
     margin: 0 0 10px 0;
 }
 
-.footer .list li {
+.footer .short li {
     display: inline-block;
     font-size: 15px;
+    font-weight: 300;
+}
+
+.footer .short .bold {
+    font-weight: 500;
+}
+
+.footer .long li {
+    display: inline-block;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -398,10 +444,11 @@ footer {
     transform: translate(-1px, 0);
 }
 
-.footer .list .bold {
-    font-weight: 500;
+
+.footer .blue {
+    color: rgb(0, 162, 255);
 }
 
 .footer address {
-    font-size: 10px;
+    font-size: 12px;
 }
