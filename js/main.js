@@ -25,4 +25,11 @@ $(function () {
         $('.subVV .sub_num').text(c + 1 + "/" + s.slideCount);
     });
 
+    $('.popup button').on('click', function () {
+        $(this).parent().hide();
+    })
+
+
+    $('.popup').draggable();
 })
+
