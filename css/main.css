@@ -405,9 +405,8 @@
 
 .popup {
     position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    top: 164px;
+    left: 392px;
     z-index: 9000;
 
 }
