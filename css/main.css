@@ -39,6 +39,7 @@
     filter: invert(100%);
 }
 
+
 .header .gnb>ul {
     display: flex;
     gap: 40px;
@@ -48,7 +49,7 @@
     position: relative;
 }
 
-.header .gnb i {
+.header .icon {
     position: absolute;
     top: 50%;
     right: 0;
@@ -153,21 +154,40 @@
 
 
 
-/* .mainVisual .mainSlide .slick-dots {
+.mainVisual .mainSlide .slick-dots {
     position: absolute;
-    bottom: 100px;
+    float: left;
+    width: 1200px;
+    top: 100px;
     left: 50%;
+
     transform: translate(-50%, 0);
 }
 
 .mainVisual .mainSlide .slick-dots>li {
     display: inline-block;
-    width: 50px;
-    height: 5px;
-    background: #f9f9f9;
-    margin: 0 2px;
-    border-radius: 50px;
-} */
+    letter-spacing: -0.03em;
+    width: 16.66%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 22px;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.mainVisual .mainSlide .slick-dots>li~li {}
+
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    color: #f8f8f8;
+    font-weight: 500;
+}
+
+.mainVisual .mainSlide .slick-dots>li button {
+    display: none;
+}
+
 
 .mainVisual {
     position: relative;
@@ -204,13 +224,7 @@
     animation-iteration-count: infinite;
 }
 
-.mainVisual .mainSlide .slick-dots>li.slick-active {
-    background: #333;
-}
 
-.mainVisual .mainSlide .slick-dots>li button {
-    display: none;
-}
 
 /* subVisual */
 
@@ -222,7 +236,7 @@
 .subVisual .inner h3 {
     font-size: 30px;
     font-weight: 700;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 }
 
 .subVisual .inner .image {
@@ -271,7 +285,7 @@
 .subBussiness h3 {
     font-size: 30px;
     font-weight: 700;
-    padding: 100px 0;
+    padding: 100px 0 50px 0;
 }
 
 
@@ -348,7 +362,7 @@
 .newsRoom h3 {
     font-size: 30px;
     font-weight: 700;
-    margin: 0 0 100px 0;
+    margin: 0 0 50px 0;
 }
 
 .newsRoom .inner {
@@ -405,8 +419,8 @@
 
 .popup {
     position: absolute;
-    top: 164px;
-    left: 392px;
+    top: 211px;
+    left: 389px;
     z-index: 9000;
 
 }
