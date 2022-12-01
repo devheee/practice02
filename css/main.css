@@ -1,34 +1,18 @@
-.topBanner {
-    background: #6597e4;
-    padding: 50px 0;
-    transition: padding 0.5s;
-}
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
 
-.topBanner.on {
-    height: 0;
-    padding: 0 0;
-    overflow: hidden;
-}
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
-.topBanner .top_inner {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
 }
-
-.topBanner h2 {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-}
-
-.topBanner i {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 25px;
-}
-
 
 /* header */
 
@@ -94,14 +78,14 @@
 
 .mainSlide .itm {
     position: relative;
-    height: 800px;
+    height: 100vh;
 }
 
 .mainSlide .itm .inner {
     position: absolute;
     width: 1200px;
     text-align: center;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -139,7 +123,7 @@
 
 .mainVisual .mainSlide .slick-arrow {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
@@ -149,8 +133,8 @@
     border: none;
     font-size: 0;
 
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -184,6 +168,41 @@
     margin: 0 2px;
     border-radius: 50px;
 } */
+
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .scroll-downs {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    margin: auto;
+
+    width: 34px;
+    height: 55px;
+}
+
+.mainVisual .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+.mainVisual .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+    animation-iteration-count: infinite;
+}
 
 .mainVisual .mainSlide .slick-dots>li.slick-active {
     background: #333;
@@ -243,13 +262,13 @@
 
 /* subSlide */
 
-.subVV {
+.subBussiness {
     position: relative;
     width: 1200px;
     margin: 0 auto;
 }
 
-.subVV h3 {
+.subBussiness h3 {
     font-size: 30px;
     font-weight: 700;
     padding: 100px 0;
@@ -305,7 +324,7 @@
 }
 
 
-.subVV .sub_num {
+.subBussiness .sub_num {
     position: absolute;
     bottom: 40px;
     right: 100px;
@@ -382,9 +401,31 @@
 }
 
 
+/* popup */
 
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 9000;
 
+}
 
+.popup img {
+    width: 100%;
+    height: 100%;
+}
+
+.popup button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    font-size: 20px;
+    background: #fff;
+    border: none;
+}
 
 /* footer */
 
@@ -394,6 +435,7 @@
 }
 
 .footer .inner {
+    position: relative;
     width: 1200px;
     margin: 0 auto;
 }
@@ -436,4 +478,21 @@
 
 .footer address {
     font-size: 12px;
+}
+
+.footer .inner .right {
+    position: absolute;
+    display: flex;
+    bottom: 35px;
+    padding: 0 0 0 1127px;
+}
+
+.footer .right i {
+    font-size: 20px;
+    padding: 5px;
+    background: #333;
+    color: #f8f8f8;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin: 0 10px 0 0;
 }
