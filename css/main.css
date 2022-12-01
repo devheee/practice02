@@ -154,29 +154,25 @@
 
 
 
+
 .mainVisual .mainSlide .slick-dots {
     position: absolute;
-    float: left;
-    width: 1200px;
+    width: 1400px;
     top: 100px;
-    left: 50%;
+    left: 1050px;
 
     transform: translate(-50%, 0);
 }
 
 .mainVisual .mainSlide .slick-dots>li {
     display: inline-block;
-    letter-spacing: -0.03em;
-    width: 16.66%;
+    margin: 0 123px 0 0;
     color: rgba(255, 255, 255, 0.6);
     font-size: 22px;
     font-weight: 300;
     cursor: pointer;
     text-align: center;
-
 }
-
-.mainVisual .mainSlide .slick-dots>li~li {}
 
 
 .mainVisual .mainSlide .slick-dots>li.slick-active {
@@ -435,7 +431,7 @@
     bottom: 15px;
     right: 15px;
 
-    font-size: 20px;
+    font-size: 15px;
     background: #fff;
     border: none;
 }
