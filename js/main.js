@@ -1,5 +1,9 @@
 $(function () {
 
+    $('.topBanner i').on('click', function () {
+        $('.topBanner').addClass('on')
+    })
+
     $('.mainSlide').slick({
         dots: true,
         autoplay: true,
