@@ -7,7 +7,7 @@ $(function () {
     $('.mainSlide').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         pauseOnHover: false,
         pauseOnFocus: false,
 
@@ -33,7 +33,7 @@ $(function () {
         dots: false,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3000,
         pauseOnHover: false,
         pauseOnFocus: false,
     });
