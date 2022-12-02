@@ -355,11 +355,30 @@
     margin: 0 auto;
 }
 
-.newsRoom h3 {
+.newsRoom .more {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsRoom .more h3 {
     font-size: 30px;
     font-weight: 700;
     margin: 0 0 50px 0;
 }
+
+.newsRoom .more span {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+}
+
+.newsRoom .more i {
+    margin: 0 0 0 10px;
+    color: rgb(0, 162, 255);
+}
+
+
 
 .newsRoom .inner {
     display: flex;

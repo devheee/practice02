@@ -39,7 +39,7 @@ $(function () {
     });
 
     $('.subSlide').on('afterChange', function (e, s, c) {
-        $('.subVV .sub_num').text(c + 1 + "/" + s.slideCount);
+        $('.subBussiness .sub_num').text(c + 1 + "/" + s.slideCount);
     });
 
     $('.popup button').on('click', function () {
